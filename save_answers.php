@@ -1,4 +1,4 @@
-<?php
+<?php require '_config.php';
 // Set the content type to application/json to respond correctly
 header('Content-Type: application/json');
 
@@ -27,7 +27,7 @@ $client_ip = $_SERVER['REMOTE_ADDR'];
 $log_entry = "========================================================\n";
 $log_entry .= "Date/Time: {$timestamp}\n";
 $log_entry .= "IP Address: {$client_ip}\n";
-$log_entry .= "Ruchika's Answers:\n";
+$log_entry .= "$yourGfName's Answers:\n";
 
 foreach ($answers_array as $entry) {
     $question = htmlspecialchars($entry['question'] ?? 'N/A');
