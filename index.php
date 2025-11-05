@@ -1,10 +1,10 @@
-<?php require '_config.php'; ?>
+<?php require '_config.php';?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Prem & Ruchika Connection</title>
+    <title>The <?php echo $yourName;?> & <?php echo $yourGfName;?> Connection</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,14 +17,14 @@
 
     <div id="loading-screen" class="visible">
         <div class="loader-content">
-            <div class="loader-spinner">P & R</div>
-            <h2 id="welcome-message">Hello, Ruchika!</h2>
+            <div class="loader-spinner"><?php echo $yourNameFirstLetter;?> & <?php echo $yourGfNameFirstName; ?></div>
+            <h2 id="welcome-message">Hello, <?php echo $yourGfName;?>!</h2>
             <p>Tap anywhere to begin your animated experience...</p>
         </div>
     </div>
 
     <nav>
-        <div class="logo">P & R</div>
+        <div class="logo"><?php echo $yourNameFirstLetter;?> & <?php echo $yourGfNameFirstLetter;?></div>
         <ul>
             <li><a href="#welcome">Welcome</a></li>
             <li><a href="#story">My Reason</a></li>
@@ -35,8 +35,8 @@
 
     <section id="welcome" class="hero-section">
         <div class="hero-content">
-            <h1>Welcome, Ruchika.</h1>
-            <p>This is a digital expression of everything you mean to Prem Prakash.</p>
+            <h1>Welcome, <?php echo $yourGfName;?>.</h1>
+            <p>This is a digital expression of everything you mean to <?php echo $yourFullName;?>.</p>
             <a href="#story" class="cta-button">Start the Journey &rarr;</a>
             <div class="animated-icon">💖</div>
         </div>
@@ -46,7 +46,7 @@
         <h2>Why I Built This for You</h2>
         <div class="reasons-container">
             <p style="font-size: 1.2rem; margin-bottom: 20px;">
-                Ruchika, I know we haven't had a chance to speak yet, but watching you in class has always inspired me.
+                <?php echo $yourGfName;?>, I know we haven't had a chance to speak yet, but watching you in class has always inspired me.
             </p>
             <p style="font-size: 1.2rem; margin-bottom: 20px;">
                 I built this website to show you how much I admire your **hard work and dedication**. It's a digital way of saying hello and showing you my passion—**programming**—in a way that's dedicated entirely to you.
@@ -58,7 +58,7 @@
     </section>
 
     <section id="quiz" class="quiz-section">
-        <h2>The Ruchika Quiz: Unlocking the Secret Heart</h2>
+        <h2>The <?php echo $yourGfName;?> Quiz: Unlocking the Secret Heart</h2>
         <p>This is a game built just for you. Please fill in your answers, and I'll learn more about the amazing person you are.</p>
         
         <div id="quiz-container">
@@ -75,15 +75,15 @@
     <section id="message" class="message-section">
         <h2>A Personal Note</h2>
         <p class="personal-letter">
-            Ruchika, I built this website not just for us, but also to show you what I'm truly passionate about. Every detail about you matters to me. I hope this makes you smile. <br><br>
+            <?php echo $yourGfName;?>, I built this website not just for us, but also to show you what I'm truly passionate about. Every detail about you matters to me. I hope this makes you smile. <br><br>
             I also wanted to share some of my professional projects. Take a peek below! <br><br>
-            – With all my heart, Prem Prakash
+            – With all my heart, <?php echo $yourFullName;?>
         </p>
         
         <ul class="project-list">
             <li>
                 <a href="https://cosmicweb.wuaze.com" target="_blank" class="project-link">
-                    &bull; Prem's Professional Services: Cosmic Web &bull;
+                    &bull; <?php echo $yourName;?>'s Professional Services: Cosmic Web &bull;
                 </a>
             </li>
             <li>
@@ -103,13 +103,13 @@
             </li>
         </ul>
 
-        <a href="mailto:Webcosmic1@gmail.com?subject=I%20loved%20the%20website%20Prem!" class="cta-button message-button">
-            Message Prem &rarr;
+        <a href="mailto:<?php echo $yourEmail;?>?subject=I%20loved%20the%20website%20<?php echo $yourName;?>!" class="cta-button message-button">
+            Message <?php echo $yourName;?> &rarr;
         </a>
     </section>
 
     <footer>
-        &copy; 2024 Prem Prakash's Dedication.
+        &copy; 2024 <?php echo $yourFullName;?>'s Dedication.
     </footer>
 
     <button id="back-to-top" title="Go to top">
