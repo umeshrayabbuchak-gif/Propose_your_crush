@@ -116,6 +116,14 @@
         &uarr;
     </button>
 
+<script>
+  const PHP_VARS = {
+    yourName: "<?php echo $yourName; ?>",
+    yourGfName: "<?php echo $yourGfName; ?>",
+    yourFullName: "<?php echo $yourFullName; ?>"
+  };
+</script>
+
     <script src="script.js"></script>
 </body>
 </html>
