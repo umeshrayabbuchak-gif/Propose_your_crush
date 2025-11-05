@@ -1,7 +1,7 @@
 // Define the quiz questions (Unchanged from previous update)
 const quizQuestions = [
     {
-        question: "${PHP_VARS.yourGfName}, when ${PHP_VARS.yourName} 'stares' in class, what is he actually focused on? (What small thing does he notice the most?)",
+        question: `${PHP_VARS.yourGfName}, when ${PHP_VARS.yourName} 'stares' in class, what is he actually focused on? (What small thing does he notice the most?)`,
         name: "stare_in_class"
     },
     {
@@ -13,7 +13,7 @@ const quizQuestions = [
         name: "hobby"
     },
     {
-        question: "If ${PHP_VARS.yourName} needed to drop you home, what is the name of the main road or closest major landmark to your house?",
+        question: `If ${PHP_VARS.yourName} needed to drop you home, what is the name of the main road or closest major landmark to your house?`,
         name: "home_location"
     },
     {
