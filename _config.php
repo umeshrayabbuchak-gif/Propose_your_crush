@@ -5,4 +5,3 @@ $yourFullName = ""; // Real full name
 $yourEmail = ""; // your email
 $yourNameFirstLetter = ""; // your name first letter
 $yourGfNameFirstLetter = ""; // your gf name first letter
-?>
