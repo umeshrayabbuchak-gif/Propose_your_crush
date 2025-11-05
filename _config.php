@@ -1,4 +1,6 @@
 <?php
-$your_name = ""; // Your real name
-$yourGfName =""; // Your real GF name
+$yourName = ""; // Your real first name
+$yourGfName = ""; // Your real GF first name
+$yourFullName = ""; // Real full name
+$yourEmail = ""; // your email
 ?>
